@@ -3,25 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>This is my beautiful restaurant where we make everyone happy</h1>
-    <header class="header">
-        <nav class="nav-bar">
-            <button class="homeBtn">Homepage</button>
-            <button class="menuBtn">Menu</button>
-            <button class="reserveBtn">Make a reservation</button>
-            <button class="aboutBtn">About</button>
-            <button class="contactBtn">Contact us</button>
-            <button class="orderBtn">Order</button>
-        </nav>
+    <header >
+        <h1>
+            This is my todo app
+        </h1>
     </header>
-    <main class="main">
-        <div id="content">
-        
-         
-        </div>
+
+    <main>
+        <button class="addTask">Add task</button>
+        <section class="container"></section>
+        <dialog class="editDialog">
+            <form class="editForm" method="dialog">
+                <ul>
+                    <li>
+                        <label for="editTitle">title</label>
+                        <input type="text" id="editTitle" name="title" required>
+                    </li>
+                    <li>
+                        <label for="editdescription">description</label>
+                        <input type="text " id="editdescription" name="description" required>
+                    </li>
+                    <li>
+                        <label for="editpriority">priority</label>
+                        <input type="text" id="editpriority" name="priority">
+                    </li>
+                    <li>
+                        <label for="editduedate">Due date</label>
+                        <input type="date" id="editduedate" name="date" required>
+                    </li>
+                    <li>
+                        <label for="editisCompleted">Completion</label>
+                        <select  id="editisCompleted" name="completion">
+                            <option value="true">true</option>
+                            <option value="false">false</option>
+                        </select>
+                    </li>
+                </ul>
+                <button id="editcancelBtn">Cancel</button>
+                <button id="editconfirmBtn">Confirm</button>
+            </form>
+        </dialog>
+        <dialog class="addDialog">
+            <form class="addForm" method="dialog">
+                <ul>
+                    <li>
+                        <label for="title">title</label>
+                        <input type="text" id="title" name="title" required>
+                    </li>
+                    <li>
+                        <label for="description">description</label>
+                        <input type="text " id="description" name="description" required>
+                    </li>
+                    <li>
+                        <label for="priority">priority</label>
+                        <input type="text" id="priority" name="priority">
+                    </li>
+                    <li>
+                        <label for="duedate">Due date</label>
+                        <input type="date" id="duedate" name="date" required>
+                    </li>
+                    <li>
+                        <label for="isCompleted">Completion</label>
+                        <select  id="isCompleted" name="completion">
+                            <option value="true">true</option>
+                            <option value="false">false</option>
+                        </select>
+                    </li>
+                </ul>
+                <button id="addcancelBtn">Cancel</button>
+                <button id="addconfirmBtn">Confirm</button>
+            </form>
+        </dialog>
+
     </main>
+    
 </body>
 </html>

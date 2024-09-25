@@ -36,7 +36,6 @@
 }
 
 body {
-    background-color: antiquewhite;
     font-family: "font1";
 }
 
@@ -45,22 +44,4 @@ img {
     max-inline-size: 50%;
 }
 
-button {
-    border: 0px;
-    padding: 10px 20px;
-    font-weight: 100;
-    background-color: rgba(0, 0, 255, 0.89);
-    color: white;
-    font-family: "font3";
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
-}
 
-button:hover {
-    transform: scale(1.2);
-}
-
-button:active {
-   opacity: 1;
-
-}
